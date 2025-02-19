@@ -1,5 +1,5 @@
 pipeline {
-    agent { label: "ahk"}
+    agent { label "ahk"}
 
     stages {
         stage('code') {
