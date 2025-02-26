@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: mobileshop
+  name: mobileshop
+spec:
+  type: NodePort
+  ports:
+  - name: "mobileshop-service"
+    port: 8000
+    targetPort: 80
+    nodePort: 31002
+  selector:
+    app: mobileshop
